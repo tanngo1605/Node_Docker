@@ -15,6 +15,12 @@ app.get("/test", (req, res) => {
     })
 })
 
+app.get("/test3", (req, res) => {
+    res.status(200).json({
+        message: "server running"
+    })
+})
+
 app.listen(PORT, () => {
     console.info("server running on port: " + PORT)
 })
