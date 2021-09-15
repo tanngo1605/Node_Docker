@@ -9,6 +9,12 @@ app.get("/", (req, res) => {
     })
 })
 
+app.get("/test", (req, res) => {
+    res.status(200).json({
+        message: "server running"
+    })
+})
+
 app.listen(PORT, () => {
     console.info("server running on port: " + PORT)
 })
